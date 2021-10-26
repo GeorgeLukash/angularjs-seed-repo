@@ -1,17 +1,24 @@
 <div class="cars-wrapper">
-    <ul>
-        <li ng-repeat="initCar in initalArray track by $index">
-            <span> Name --- {{ initCar.name }}</span>
-            <br>
-            <span> Color --- {{ initCar.color }}111</span>
+    <ul class="cars-list init-cars">
+        <li class="car-item" ng-repeat="initCar in initalArray track by $index">
+            <p>
+                Name :{{ initCar.name }}<br>
+                Color :{{ initCar.color }}<br>
+                Description :{{ initCar.desc.data }}<br>
+                {{ initCar.desc.someNewValue.superText }}<br>
+                {{ initCar.desc.someNewValue.hyperText.id }}<br>
+            </p>
         </li>
     </ul>
-    <span>-----------------------------------------------</span>
-    <ul>
-        <li ng-repeat="mapCar in mappedArray track by $index">
-            <span> Name --- {{ mapCar.name }}</span>
-            <br>
-            <span> Color --- {{ mapCar.color }}222</span>
+    <ul class="cars-list map-cars">
+        <li class="car-item" ng-repeat="mapCar in mappedArray track by $index">
+            <p>
+                Name :{{ mapCar.name }}<br>
+                Color :{{ mapCar.color }}<br>
+                Description :{{ mapCar.desc.data }}<br>
+                {{ mapCar.desc.someNewValue.superText }}<br>
+                {{ mapCar.desc.someNewValue.hyperText.id }}<br>
+            </p>
         </li>
     </ul>
 </div>

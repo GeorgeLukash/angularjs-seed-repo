@@ -1,0 +1,29 @@
+.cars-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.cars-wrapper .cars-list {
+    list-style: none;
+}
+
+.cars-wrapper .cars-list .car-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 5px 5px;
+    border-bottom: 1px solid gray;
+}
+
+.cars-wrapper .cars-list .car-item :hover {
+   background-color: rgba(165, 164, 164, 0.5);
+   color: white;
+}
+
+.cars-wrapper .init-cars {
+    color: blue;
+}
+
+.cars-wrapper .map-cars {
+    color: gray;
+}
