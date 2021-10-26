@@ -95,6 +95,7 @@ module.exports = function(grunt) {
           'bower_components/angular-route/angular-route.js',
           'bower_components/angular-animate/angular-animate.js',
           'app/scripts/homePages.js',
+          'app/scripts/components/calculation/calculation.js',
           'app/scripts/app.js',
           //place your JavaScript files here
         ]

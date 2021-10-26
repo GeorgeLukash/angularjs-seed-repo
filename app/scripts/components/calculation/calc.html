@@ -1,0 +1,17 @@
+<div class="cars-wrapper">
+    <ul>
+        <li ng-repeat="initCar in initalArray track by $index">
+            <span> Name --- {{ initCar.name }}</span>
+            <br>
+            <span> Color --- {{ initCar.color }}111</span>
+        </li>
+    </ul>
+    <span>-----------------------------------------------</span>
+    <ul>
+        <li ng-repeat="mapCar in mappedArray track by $index">
+            <span> Name --- {{ mapCar.name }}</span>
+            <br>
+            <span> Color --- {{ mapCar.color }}222</span>
+        </li>
+    </ul>
+</div>
