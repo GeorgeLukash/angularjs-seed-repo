@@ -82,6 +82,7 @@ module.exports = function(grunt) {
         dest: './app/assets/app.css',
         src: [
           'app/styles/app.css',
+          'app/scripts/components/calculation/calc.css'
           //place your Stylesheet files here
         ]
       },
@@ -95,6 +96,9 @@ module.exports = function(grunt) {
           'bower_components/angular-route/angular-route.js',
           'bower_components/angular-animate/angular-animate.js',
           'app/scripts/homePages.js',
+          'app/scripts/components/calculation/calculation.js',
+          'app/scripts/components/calculation/services/common.constant.js',
+          'app/scripts/components/calculation/services/common.service.js',
           'app/scripts/app.js',
           //place your JavaScript files here
         ]
