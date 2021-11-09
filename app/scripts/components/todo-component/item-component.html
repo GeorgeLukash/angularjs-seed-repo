@@ -1,0 +1,19 @@
+<div>
+   <div ng-repeat="tod in $ctrl.todo" hero="hero"  
+      on-update="$ctrl.updateTodo(tod, prop, value)">
+
+      <input type="checkbox" ng-model="tod.done"/>
+
+      <span class="done-{{tod.done}}">{{tod.text}}</span>
+
+      <!-- <input type="text" ng-model="item.todoText"/> -->
+
+      <!-- <button ng-click="$ctrl.edit(item.todoText)">Edit</button>
+      <button ng-click="$ctrl.save()">Save</button>
+      <button>Reset</button> -->
+
+      <editable-field field-value="$ctrl.tod.text" 
+      field-type="text" on-update="$ctrl.update('text', value)"></editable-field>
+      <button ng-click="$ctrl.deleteOne(tod)">x</button>
+   </div>
+</div>

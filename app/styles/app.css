@@ -1,0 +1,7 @@
+body{
+   background-color: grey;
+}
+.done-true {
+   text-decoration: line-through;
+   color: silver;
+ }
