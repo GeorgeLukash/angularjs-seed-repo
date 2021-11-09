@@ -1,6 +1,7 @@
 angular.module("app.homePages",).component("todoList", {
    templateUrl: "./scripts/components/todoList-component.html",
    controller: function() {
+      // TODO:-think about rename
       this.todo = [];
 
       this.addTodo = function($event) {
@@ -21,6 +22,10 @@ angular.module("app.homePages",).component("todoList", {
          todo[prop] = value;      
        };
 
+      this.filterActive = function() {
+         this.todo = this.todo.filter(todo => !todo.done) 
+         // this.todo = [];
+      }
       this.filtredTodo = function() {
          const newTodo = []
       }
