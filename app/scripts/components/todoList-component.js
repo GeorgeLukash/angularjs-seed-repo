@@ -3,14 +3,17 @@ angular.module("app.homePages",).component("todoList", {
    controller: function() {
       // TODO:-think about rename
       this.todo = [];
+      this.allTodos = [];
 
       this.addTodo = function($event) {
          this.todo.push($event);
+         this.allTodos = this.todo
          console.log(this.todo)
       };
 
       this.clearTodo = () => {
          this.todo = [];
+         this.allTodos = [];
       };
 
       this.deleteOne = function(tod) {
@@ -23,11 +26,15 @@ angular.module("app.homePages",).component("todoList", {
        };
 
       this.filterActive = function() {
-         this.todo = this.todo.filter(todo => !todo.done) 
-         // this.todo = [];
+         this.todo = this.allTodos.filter(todo => !todo.done) 
       }
-      this.filtredTodo = function() {
-         const newTodo = []
+
+      this.filterCompleted = function() {
+         this.todo = this.allTodos.filter(todo => todo.done)
+      }
+
+      this.filterAll = function() {
+         this.todo = this.allTodos
       }
    },
 })
