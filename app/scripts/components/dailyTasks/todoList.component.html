@@ -1,0 +1,20 @@
+<div class="main_content">
+  <div class="total_todos">
+    <p>Total tasks for today: {{ $ctrl.todoCopy.length }}</p>
+  </div>
+
+  <add-component on-update="$ctrl.addItem($event)"></add-component>
+
+  <list-component
+    todo="$ctrl.todoList"
+    on-delete="$ctrl.deleteItem($event)"
+    class="list_component"
+  ></list-component>
+
+  <div class="sort_delete">
+    <sort-component todo="$ctrl.todoList"></sort-component>
+    <button ng-click="$ctrl.clearAll()" class="button">Clear list</button>
+  </div>
+
+  <filter-component filter-todo="$ctrl.filterList($event)"></filter-component>
+</div>

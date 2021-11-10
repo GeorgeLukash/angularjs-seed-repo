@@ -1,10 +1,16 @@
-angular.module('myApp', ['ngRoute', 'app.homePages'])
+angular
+  .module("myApp", ["ngRoute", "app.dailyTasks"])
 
-  .constant('TPL_PATH', '/templates')
+  .constant("TPL_PATH", "/templates")
 
-  .config(function($routeProvider, TPL_PATH) {
-    $routeProvider.when('/',{
-      controller : 'HomeCtrl',
-      templateUrl : TPL_PATH + '/home.html'
+  .config(($routeProvider, TPL_PATH) => {
+    $routeProvider.when("/dailyTasks", {
+      templateUrl: TPL_PATH + "/dailyTasks.html",
+    });
+    $routeProvider.when("/motivationPhrases", {
+      templateUrl: TPL_PATH + "/motivationPhrases.html",
+    });
+    $routeProvider.otherwise({
+      redirectTo: "/dailyTasks",
     });
   });

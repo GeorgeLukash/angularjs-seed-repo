@@ -1,19 +1,32 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html data-ng-app="myApp">
   <head>
-    <title>Yearofmoo AngularJS Seed Repo</title>
+    <title>To Do List</title>
     <link rel="stylesheet" type="text/css" href="./assets/app.css" />
   </head>
-
   <body>
     <div id="wrapper">
-      <header>Header</header>
+      <header class="header_footer">
+        <p class="welcome">Welcome to your todo list</p>
+      </header>
       <main id="view-container">
-        <div ng-view></div>
+        <nav class="pages">
+          <a href="#!dailyTasks">My daily tasks</a>
+          <span>|</span>
+          <a href="#!motivationPhrases">I need motivation!!!</a>
+        </nav>
+        <div ng-view class="content"></div>
       </main>
-      <footer>Footer</footer>
+      <footer class="header_footer">
+        <p>Motivation comes from working on things we care about</p>
+      </footer>
     </div>
     <script src="./assets/app.js"></script>
+    <script src="./scripts/components/dailyTasks/todoList.component.js"></script>
+    <script src="./scripts/components/dailyTasks/list/list.component.js"></script>
+    <script src="./scripts/components/dailyTasks/filter/filter.component.js"></script>
+    <script src="./scripts/components/dailyTasks/add/add.component.js"></script>
+    <script src="./scripts/components/dailyTasks/sort/sort.component.js"></script>
     <script src="//localhost:7777/livereload.js"></script>
   </body>
 </html>
