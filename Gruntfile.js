@@ -115,7 +115,7 @@ module.exports = function (grunt) {
         livereload: 7777
       },
       assets: {
-        files: ['app/styles/**/*.css', 'app/scripts/**/*.js'],
+        files: ['app/styles/**/*.css', 'app/scripts/**/*.js', 'app/scripts/**/*.html', 'app/scripts/**/*.css'],
         tasks: ['concat']
       },
       protractor: {
