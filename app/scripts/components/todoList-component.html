@@ -3,11 +3,11 @@
       <p>Todo {{ $ctrl.todo.length }}</p>
    </div>
       <add-todo on-update="$ctrl.addTodo($event)"></add-todo>
-      <!-- <sort-todo todo="$ctrl.todo"></sort-todo>
-      <edit-todo todo="$ctrl.todo"></edit-todo> -->
-      <item-todo todo="$ctrl.todo" on-delete="$ctrl.deleteOne($event)"></item-todo>
+      <item-todo 
+         todo="$ctrl.todo" 
+         on-update="$ctrl.updateTodo($event)"
+         on-delete="$ctrl.deleteOne($event)"></item-todo>
    <div>
-      
       <button ng-click="$ctrl.clearTodo()">Clear all</button>
       <button ng-click="$ctrl.filterActive()">active</button>
       <button ng-click="$ctrl.filterCompleted()">completed</button>

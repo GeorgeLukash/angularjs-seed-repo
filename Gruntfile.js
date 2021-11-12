@@ -97,6 +97,10 @@ module.exports = function(grunt) {
           'app/scripts/homePages.js',
           'app/scripts/app.js',
           //place your JavaScript files here
+          'app/scripts/components/todoList-component.js',
+          'app/scripts/components/add-component/add-component.js',
+          'app/scripts/components/todo-component/item-component.js',
+          'app/scripts/components/edit-component/edit-component.js',
         ]
       },
     },
