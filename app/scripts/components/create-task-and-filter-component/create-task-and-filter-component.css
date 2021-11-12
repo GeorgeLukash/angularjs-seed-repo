@@ -1,0 +1,75 @@
+.add-todo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+}
+
+.search {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    padding: 6px 12px;
+}
+
+.search-input {
+    width: 25%;
+    font-size: 18px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.sort-by {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    padding: 6px 12px;
+}
+
+.sort-by-select {
+    width: 25%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 18px;
+}
+
+.task {
+    font-size: 24px;
+    color: white;
+}
+
+.done-true {
+    text-decoration: line-through;
+    color: rgb(188, 206, 185);
+    font-size: 24px;
+    font-style: oblique;
+}
+
+.edit-button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 2px solid white;
+    transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+}
+
+.edit-button:hover {
+    background-color: transparent;
+    color: white;
+    border: 1 px solid white;
+}
+
+.save-button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 2px solid white;
+    transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+}
+
+.save-button:hover {
+    background-color: transparent;
+    color: white;
+    border: 1 px solid white;
+}

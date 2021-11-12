@@ -1,0 +1,13 @@
+<div class="main">
+    <h1 class="main-header">Total Tasks: {{$ctrl.getTotalTodos()}}</h1>
+    <add-new-task-component 
+        on-update="$ctrl.addTodo($event)">
+    </add-new-task-component>
+    <create-task-and-filter-component 
+        todos="$ctrl.todos">
+    </create-task-and-filter-component>
+    <delete-marked-tasks-component 
+        on-delete="$ctrl.clear()" 
+        on-delete-all="$ctrl.clearAll()">
+    </delete-marked-tasks-component>
+</div>  

@@ -82,6 +82,10 @@ module.exports = function(grunt) {
         dest: './app/assets/app.css',
         src: [
           'app/styles/app.css',
+          'app/scripts/components/add-new-task-component/add-new-task-component.css',
+          'app/scripts/components/main-list-component.css',
+          'app/scripts/components/create-task-and-filter-component/create-task-and-filter-component.css',
+          'app/scripts/components/delete-marked-tasks-component/delete-marked-tasks-component.css',
           //place your Stylesheet files here
         ]
       },
@@ -96,6 +100,10 @@ module.exports = function(grunt) {
           'bower_components/angular-animate/angular-animate.js',
           'app/scripts/homePages.js',
           'app/scripts/app.js',
+          'app/scripts/components/main-list-component.js',
+          'app/scripts/components/create-task-and-filter-component/create-task-and-filter-component.js',
+          'app/scripts/components/add-new-task-component/add-new-task-component.js',
+          'app/scripts/components/delete-marked-tasks-component/delete-marked-tasks-component.js',
           //place your JavaScript files here
         ]
       },
@@ -106,7 +114,7 @@ module.exports = function(grunt) {
         livereload: 7777
       },
       assets: {
-        files: ['app/styles/**/*.css','app/scripts/**/*.js'],
+        files: ['app/styles/**/*.css', 'app/scripts/**/*.js', 'app/scripts/components/**/*.css', 'app/scripts/components/**/*.html'],
         tasks: ['concat']
       },
       protractor: {
