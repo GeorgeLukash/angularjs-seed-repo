@@ -1,5 +1,5 @@
  angular.module('app.homePages').component('editableField', {
-   templateUrl: './scripts/components/edit-component/edit-component.html',
+   templateUrl: './scripts/components/vlad-todo-components/vlad-edit-component/vlad-edit-component.html',
    bindings: {
      fieldValue: "<",
      fieldType: "@?",

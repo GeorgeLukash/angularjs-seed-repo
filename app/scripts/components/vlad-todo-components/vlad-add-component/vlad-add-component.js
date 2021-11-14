@@ -1,5 +1,5 @@
 angular.module("app.homePages").component("addTodo", {
-   templateUrl: "./scripts/components/add-component/add-component.html",
+   templateUrl: "./scripts/components/vlad-todo-components/vlad-add-component/vlad-add-component.html",
    bindings: {
       todo: "<",
       onUpdate: "&",

@@ -1,5 +1,5 @@
 angular.module("app.homePages",).component("todoList", {
-   templateUrl: "./scripts/components/todoList-component.html",
+   templateUrl: "./scripts/components/vlad-todo-components/vlad-todo-list-component.html",
    controller: function() {
       this.todo = [];
       this.allTodos = [];
