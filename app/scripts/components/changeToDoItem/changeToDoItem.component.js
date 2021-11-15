@@ -21,10 +21,8 @@ angular.module('todos').component('changeToDoItem', {
         };
 
         this.$onInit = function () {
-            // Make a copy of the initial value to be able to reset it later
             this.fieldValueCopy = this.fieldValue;
 
-            // Set a default fieldType
             if (!this.fieldType) {
                 this.fieldType = 'text';
             }
