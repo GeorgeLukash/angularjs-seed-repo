@@ -1,6 +1,6 @@
 angular.module("todos")
     .component("generalAddFormToDo", {
-        templateUrl: "/scripts/components/generalAddFormToDo/generalAddFormToDo.template.html",
+        templateUrl: "/scripts/components/Artur/generalAddFormToDoArtur/generalAddFormToDoArtur.template.html",
         bindings: {
             onAdd: "&",
         },

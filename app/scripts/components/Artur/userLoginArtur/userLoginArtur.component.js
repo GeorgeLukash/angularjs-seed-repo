@@ -1,6 +1,6 @@
 angular.module('auth')
     .component('userLogin', {
-        templateUrl: '/scripts/components/userLogin/userLogin.template.html',
+        templateUrl: '/scripts/components/Artur/userLoginArtur/userLoginArtur.template.html',
         controller: function ($scope, $location, authService) {
             this.userName = null;
 

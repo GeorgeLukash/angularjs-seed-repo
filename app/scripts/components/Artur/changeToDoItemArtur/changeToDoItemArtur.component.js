@@ -1,5 +1,5 @@
 angular.module('todos').component('changeToDoItem', {
-    templateUrl: '/scripts/components/changeToDoItem/changeToDoItem.template.html',
+    templateUrl: '/scripts/components/Artur/changeToDoItemArtur/changeToDoItemArtur.template.html',
     bindings: {
         fieldValue: '<',
         fieldType: '@?',

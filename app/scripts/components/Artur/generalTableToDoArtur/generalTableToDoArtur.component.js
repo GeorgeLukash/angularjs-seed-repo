@@ -1,6 +1,6 @@
 angular.module('todos')
     .component('generalTableToDo', {
-        templateUrl: '/scripts/components/generalTableToDo/generalTableToDo.template.html',
+        templateUrl: '/scripts/components/Artur/generalTableToDoArtur/generalTableToDoArtur.template.html',
         bindings: {
             todos: '<',
             query: '<',

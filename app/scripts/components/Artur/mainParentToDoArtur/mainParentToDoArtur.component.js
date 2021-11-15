@@ -1,6 +1,6 @@
 angular.module('todos', ['auth'])
     .component('mainParentToDo', {
-        templateUrl: '/scripts/components/mainParentToDo/mainParentToDo.template.html',
+        templateUrl: '/scripts/components/Artur/mainParentToDoArtur/mainParentToDoArtur.template.html',
         controller: function (authService) {
             this.user = authService.getUser();
             this.todos = [];

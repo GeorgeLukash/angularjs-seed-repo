@@ -98,13 +98,13 @@ module.exports = function (grunt) {
           'bower_components/popover.js/dist/popover.js',
           'bower_components/bootstrap/dist/js/bootstrap.js',
           'app/scripts/app.js',
-          'app/scripts/services/auth.service.js',
-          'app/scripts/components/mainParentToDo/mainParentToDo.component.js',
-          'app/scripts/components/generalAddFormToDo/generalAddFormToDo.component.js',
-          'app/scripts/components/filtersToDoItems/filtersToDoItems.component.js',
-          'app/scripts/components/generalTableToDo/generalTableToDo.component.js',
-          'app/scripts/components/changeToDoItem/changeToDoItem.component.js',
-          'app/scripts/components/userLogin/userLogin.component.js',
+          'app/scripts/components/Artur/servicesArtur/authArtur.service.js',
+          'app/scripts/components/Artur/mainParentToDoArtur/mainParentToDoArtur.component.js',
+          'app/scripts/components/Artur/generalAddFormToDoArtur/generalAddFormToDoArtur.component.js',
+          'app/scripts/components/Artur/filtersToDoItemsArtur/filtersToDoItemsArtur.component.js',
+          'app/scripts/components/Artur/generalTableToDoArtur/generalTableToDoArtur.component.js',
+          'app/scripts/components/Artur/changeToDoItemArtur/changeToDoItemArtur.component.js',
+          'app/scripts/components/Artur/userLoginArtur/userLoginArtur.component.js',
           //place your JavaScript files here
         ]
       },
@@ -115,7 +115,7 @@ module.exports = function (grunt) {
         livereload: 7777
       },
       assets: {
-        files: ['app/styles/**/*.css','app/scripts/**/*.js', 'app/scripts/**/*.html', 'app/scripts/**/*.css'],
+        files: ['app/styles/**/*.css', 'app/scripts/**/*.js', 'app/scripts/**/*.html', 'app/scripts/**/*.css'],
 
         tasks: ['concat']
       },

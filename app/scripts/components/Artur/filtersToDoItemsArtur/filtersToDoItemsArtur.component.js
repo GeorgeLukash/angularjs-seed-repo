@@ -1,5 +1,5 @@
 angular.module("todos").component("filtersToDoItems", {
-    templateUrl: "/scripts/components/filtersToDoItems/filtersToDoItems.template.html",
+    templateUrl: "/scripts/components/Artur/filtersToDoItemsArtur/filtersToDoItemsArtur.template.html",
     bindings: {
         sort: '=',
         query: '=',
