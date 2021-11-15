@@ -37,7 +37,7 @@
     color: white;
 }
 
-.done-true {
+.done {
     text-decoration: line-through;
     color: rgb(188, 206, 185);
     font-size: 24px;

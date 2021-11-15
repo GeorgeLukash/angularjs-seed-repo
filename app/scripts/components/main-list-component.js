@@ -20,15 +20,15 @@ angular.module('app.homePages')
                 this.todos.push($event);
             };
 
-            this.clear = () => {
+            this.deleteMarkedTodos = () => {
                 const oldList = this.todos;
                 this.todos = [];
-                angular.forEach(oldList, (x) => {
-                    if (!x.done) this.todos.push(x);
+                angular.forEach(oldList, (todo) => {
+                    if (!todo.done) this.todos.push(todo);
                 });
             };
 
-            this.clearAll = () => {
+            this.deleteAllTodos = () => {
                 this.todos = [];
             };
         },

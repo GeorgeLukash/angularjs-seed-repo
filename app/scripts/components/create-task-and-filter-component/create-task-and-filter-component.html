@@ -16,7 +16,7 @@
 
     <div ng-repeat="todo in $ctrl.todos | filter:text | orderBy:name" class="task">
         <input type="checkbox" ng-model="todo.done"/>
-        <span ng-hide="todo.editMode" class="done-{{todo.done}}">{{todo.text}}</span>
+        <span ng-hide="todo.editMode" ng-class="{done: todo.done}">{{todo.text}}</span>
         <span ng-show="todo.editMode">
             <input ng-model="todo.text" />
             <button ng-click="$ctrl.save(todo)" class="save-button">Save</button>
