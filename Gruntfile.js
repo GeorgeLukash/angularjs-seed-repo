@@ -83,6 +83,10 @@ module.exports = function(grunt) {
         src: [
           'app/styles/app.css',
           //place your Stylesheet files here
+          'app/scripts/components/vlad-todo-components/vlad-todo-list-component.css',
+          'app/scripts/components/vlad-todo-components/vlad-add-component/vlad-add-component.css',
+          'app/scripts/components/vlad-todo-components/vlad-todo-component/vlad-item-component.css',
+          'app/scripts/components/vlad-todo-components/vlad-edit-component/vlad-edit-component.css',
         ]
       },
       scripts: {

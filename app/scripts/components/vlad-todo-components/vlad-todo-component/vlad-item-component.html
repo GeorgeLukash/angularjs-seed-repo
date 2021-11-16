@@ -1,11 +1,21 @@
 <div>
-   <div ng-repeat="tod in $ctrl.todo">
-      <input type="checkbox" ng-model="tod.done"/>
+   <div 
+         ng-repeat="tod in $ctrl.todo" 
+         class="item-text">
+      <input 
+         type="checkbox"
+         class="input-checkbox"
+         ng-model="tod.done"/>
       <span class="done-{{tod.done}}">{{tod.text}}</span>
       <editable-field 
          field-value="tod.text" 
          field-type="text" 
-         on-update="$ctrl.update(tod.id, 'text', value)"></editable-field>
-      <button ng-click="$ctrl.deleteOne(tod)">x</button>
+         on-update="$ctrl.update(tod.id, 'text', value)">
+      </editable-field>
+      <button
+         ng-click="$ctrl.deleteOne(tod)"
+         class="delete-one">
+         x
+      </button>
    </div>
 </div>

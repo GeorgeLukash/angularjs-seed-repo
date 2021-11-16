@@ -1,17 +1,40 @@
-<div>
+<div class="todo_container">
+   <div class="todo_header">
+      <h1 class="heder-style">
+         Todo List by Vladyslav
+      </h1>
+   </div>
    <div>
-      <p>Todo {{ $ctrl.todo.length }}</p>
+      <h2 class="heder-style">
+         All todo {{ $ctrl.todo.length }}
+      </h2>
    </div>
       <add-todo on-update="$ctrl.addTodo($event)"></add-todo>
+      <div>
+         <button 
+            ng-click="$ctrl.filterActive()" 
+            class="buttons">
+            Active todo
+         </button>
+         <button 
+            ng-click="$ctrl.filterCompleted()" 
+            class="buttons">
+            Completed todo
+         </button>
+         <button 
+            ng-click="$ctrl.filterAll()" 
+            class="buttons">
+            All todo
+         </button>
+         <button
+            ng-click="$ctrl.clearTodo()" 
+            class="buttons">
+            Clear all
+         </button>
+      </div>
       <item-todo 
          todo="$ctrl.todo" 
          on-update="$ctrl.updateTodo($event)"
-         on-delete="$ctrl.deleteOne($event)"></item-todo>
-   <div>
-      <button ng-click="$ctrl.clearTodo()">Clear all</button>
-      <button ng-click="$ctrl.filterActive()">active</button>
-      <button ng-click="$ctrl.filterCompleted()">completed</button>
-      <button ng-click="$ctrl.filterAll()">all</button>
-   </div>
-      <filter-todo ></filter-todo>
+         on-delete="$ctrl.deleteOne($event)">
+      </item-todo>
 </div>
