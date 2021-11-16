@@ -5,6 +5,9 @@ angular.module('myApp', ['ngRoute', 'todos', 'auth'])
   .config(function ($routeProvider, TPL_PATH) {
     $routeProvider
       .when('/', {
+        templateUrl: TPL_PATH + '/homePage.template.html'
+      })
+      .when('/login', {
         templateUrl: TPL_PATH + '/login.html'
       })
       .when('/home', {
