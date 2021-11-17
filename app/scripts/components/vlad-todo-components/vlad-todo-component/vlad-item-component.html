@@ -1,4 +1,4 @@
-<div>
+<div class="item-component">
    <div 
          ng-repeat="tod in $ctrl.todo" 
          class="item-text">
@@ -6,7 +6,7 @@
          type="checkbox"
          class="input-checkbox"
          ng-model="tod.done"/>
-      <span class="done-{{tod.done}}">{{tod.text}}</span>
+      <span class="done-{{tod.done}} text-text">{{tod.text}}</span>
       <editable-field 
          field-value="tod.text" 
          field-type="text" 

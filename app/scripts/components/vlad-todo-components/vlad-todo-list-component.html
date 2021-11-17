@@ -1,40 +1,43 @@
-<div class="todo_container">
-   <div class="todo_header">
-      <h1 class="heder-style">
-         Todo List by Vladyslav
-      </h1>
-   </div>
-   <div>
-      <h2 class="heder-style">
-         All todo {{ $ctrl.todo.length }}
-      </h2>
-   </div>
-      <add-todo on-update="$ctrl.addTodo($event)"></add-todo>
-      <div>
-         <button 
-            ng-click="$ctrl.filterActive()" 
-            class="buttons">
-            Active todo
-         </button>
-         <button 
-            ng-click="$ctrl.filterCompleted()" 
-            class="buttons">
-            Completed todo
-         </button>
-         <button 
-            ng-click="$ctrl.filterAll()" 
-            class="buttons">
-            All todo
-         </button>
-         <button
-            ng-click="$ctrl.clearTodo()" 
-            class="buttons">
-            Clear all
-         </button>
+<div class="todo-container">
+   <a href="#!" class="buttons">Home</a>
+   <div class="todo-wrapper">
+      <div class="todo-header">
+         <h1 class="heder-style">
+            Todo List by Vladyslav
+         </h1>
       </div>
-      <item-todo 
-         todo="$ctrl.todo" 
-         on-update="$ctrl.updateTodo($event)"
-         on-delete="$ctrl.deleteOne($event)">
-      </item-todo>
+      <div>
+         <h2 class="heder-style">
+            All todo {{ $ctrl.todo.length }}
+         </h2>
+      </div>
+         <add-todo on-update="$ctrl.addTodo($event)"></add-todo>
+         <div>
+            <button 
+               ng-click="$ctrl.filterActive()" 
+               class="buttons">
+               Active todo
+            </button>
+            <button 
+               ng-click="$ctrl.filterCompleted()" 
+               class="buttons">
+               Completed todo
+            </button>
+            <button 
+               ng-click="$ctrl.filterAll()" 
+               class="buttons">
+               All todo
+            </button>
+            <button
+               ng-click="$ctrl.clearTodo()" 
+               class="buttons">
+               Clear all
+            </button>
+         </div>
+         <item-todo 
+            todo="$ctrl.todo" 
+            on-update="$ctrl.updateTodo($event)"
+            on-delete="$ctrl.deleteOne($event)">
+         </item-todo>
+   </div>
 </div>
