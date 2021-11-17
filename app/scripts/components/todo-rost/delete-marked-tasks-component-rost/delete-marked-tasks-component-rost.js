@@ -1,7 +1,7 @@
 angular
-    .module('app.homePages')
-    .component('deleteMarkedTasksComponent', {
-        templateUrl: './scripts/components/delete-marked-tasks-component/delete-marked-tasks-component.html',
+    .module('todoRost')
+    .component('deleteMarkedTasksComponentRost', {
+        templateUrl: './scripts/components/todo-rost/delete-marked-tasks-component-rost/delete-marked-tasks-component-rost.html',
         bindings: {
             onDelete: '&',
             onDeleteAll: '&'

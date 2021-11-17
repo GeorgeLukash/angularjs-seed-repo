@@ -1,6 +1,6 @@
-angular.module('app.homePages')
-    .component('mainListComponent', {
-        templateUrl: './scripts/components/main-list-component.html',
+angular.module('todoRost', [])
+    .component('mainListComponentRost', {
+        templateUrl: './scripts/components/todo-rost/main-list-component-rost.html',
         controller: function () {
 
             this.todos = [

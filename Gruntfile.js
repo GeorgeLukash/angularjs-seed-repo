@@ -82,10 +82,10 @@ module.exports = function(grunt) {
         dest: './app/assets/app.css',
         src: [
           'app/styles/app.css',
-          'app/scripts/components/add-new-task-component/add-new-task-component.css',
-          'app/scripts/components/main-list-component.css',
-          'app/scripts/components/create-task-and-filter-component/create-task-and-filter-component.css',
-          'app/scripts/components/delete-marked-tasks-component/delete-marked-tasks-component.css',
+          'app/scripts/components/todo-rost/add-new-task-component-rost/add-new-task-component-rost.css',
+          'app/scripts/components/todo-rost/main-list-component-rost.css',
+          'app/scripts/components/todo-rost/create-task-and-filter-component-rost/create-task-and-filter-component-rost.css',
+          'app/scripts/components/todo-rost/delete-marked-tasks-component-rost/delete-marked-tasks-component-rost.css',
           //place your Stylesheet files here
         ]
       },
@@ -100,10 +100,10 @@ module.exports = function(grunt) {
           'bower_components/angular-animate/angular-animate.js',
           'app/scripts/homePages.js',
           'app/scripts/app.js',
-          'app/scripts/components/main-list-component.js',
-          'app/scripts/components/create-task-and-filter-component/create-task-and-filter-component.js',
-          'app/scripts/components/add-new-task-component/add-new-task-component.js',
-          'app/scripts/components/delete-marked-tasks-component/delete-marked-tasks-component.js',
+          'app/scripts/components/todo-rost/main-list-component-rost.js',
+          'app/scripts/components/todo-rost/create-task-and-filter-component-rost/create-task-and-filter-component-rost.js',
+          'app/scripts/components/todo-rost/add-new-task-component-rost/add-new-task-component-rost.js',
+          'app/scripts/components/todo-rost/delete-marked-tasks-component-rost/delete-marked-tasks-component-rost.js',
           //place your JavaScript files here
         ]
       },

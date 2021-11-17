@@ -1,13 +1,13 @@
 <div class="main">
     <h1 class="main-header">Total Tasks: {{$ctrl.getTotalTodos()}}</h1>
-    <add-new-task-component 
+    <add-new-task-component-rost 
         on-update="$ctrl.addTodo($event)">
-    </add-new-task-component>
-    <create-task-and-filter-component 
+    </add-new-task-component-rost>
+    <create-task-and-filter-component-rost 
         todos="$ctrl.todos">
-    </create-task-and-filter-component>
-    <delete-marked-tasks-component 
+    </create-task-and-filter-component-rost>
+    <delete-marked-tasks-component-rost 
         on-delete="$ctrl.deleteMarkedTodos()" 
         on-delete-all="$ctrl.deleteAllTodos()">
-    </delete-marked-tasks-component>
+    </delete-marked-tasks-component-rost>
 </div>  

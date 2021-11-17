@@ -1,7 +1,7 @@
 angular
-    .module('app.homePages')
-    .component('createTaskAndFilterComponent', {
-        templateUrl: './scripts/components/create-task-and-filter-component/create-task-and-filter-component.html',
+    .module('todoRost')
+    .component('createTaskAndFilterComponentRost', {
+        templateUrl: './scripts/components/todo-rost/create-task-and-filter-component-rost/create-task-and-filter-component-rost.html',
         bindings: {
             todos: '<',
             onUpdate: '&'

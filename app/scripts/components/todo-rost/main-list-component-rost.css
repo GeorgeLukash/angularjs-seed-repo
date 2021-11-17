@@ -2,6 +2,7 @@
     margin: 0;
     width: 100%;
     height: 980px;
+    background: linear-gradient(#7e886d,#41554f);
 }
 
 .main-header {

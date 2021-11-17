@@ -1,6 +1,6 @@
-angular.module('app.homePages')
-    .component('addNewTaskComponent', {
-        templateUrl: './scripts/components/add-new-task-component/add-new-task-component.html',
+angular.module('todoRost')
+    .component('addNewTaskComponentRost', {
+        templateUrl: './scripts/components/todo-rost/add-new-task-component-rost/add-new-task-component-rost.html',
         bindings: {
             onUpdate: '&'
         },
