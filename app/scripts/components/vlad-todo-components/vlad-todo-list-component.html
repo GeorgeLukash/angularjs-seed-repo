@@ -12,7 +12,7 @@
          </h2>
       </div>
          <add-todo on-update="$ctrl.addTodo($event)"></add-todo>
-         <div>
+         <div ng-if="$ctrl.todo.length > 0">
             <button 
                ng-click="$ctrl.filterActive()" 
                class="buttons">

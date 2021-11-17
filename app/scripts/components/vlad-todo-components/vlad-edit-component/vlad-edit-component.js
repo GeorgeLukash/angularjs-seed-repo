@@ -1,4 +1,4 @@
- angular.module('app.homePages').component('editableField', {
+angular.module('app.homePages').component('editableField', {
    templateUrl: './scripts/components/vlad-todo-components/vlad-edit-component/vlad-edit-component.html',
    bindings: {
      fieldValue: "<",
@@ -27,5 +27,5 @@
             this.fieldType = "text";
          }
       };
- }
- });
+   }
+});
