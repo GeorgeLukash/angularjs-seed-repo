@@ -1,15 +1,19 @@
-<div class="filters">
-    <label>Отсортируйте ваше дело:
-        <select ng-model="$ctrl.sort" class="form-select form-select-sm">
-            <option value="-state">Выполненые</option>
-            <option value="state">В процессе
-            </option>
-            <option value="time">по времени </option>
-        </select>
-    </label>
+<div class="filters d-flex justify-content-center">
+    <div class="sort">
+        <label>Отсортируйте ваше дело:
+            <select ng-model="$ctrl.sort" class="form-select form-select-sm">
+                <option value="-state">Выполненые</option>
+                <option value="state">В процессе
+                </option>
+                <option value="time">по времени </option>
+            </select>
+        </label>
+    </div>
 
-    <label>
-        Поиск по описанию:
-        <input ng-model="$ctrl.query" type="text" class="form-control">
-    </label>
+    <div class="search">
+        <label>
+            Поиск по описанию:
+            <input ng-model="$ctrl.query" type="text" class="form-control">
+        </label>
+    </div>
 </div>

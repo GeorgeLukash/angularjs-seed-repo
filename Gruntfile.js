@@ -82,6 +82,9 @@ module.exports = function (grunt) {
         dest: './app/assets/app.css',
         src: [
           'app/styles/app.css',
+          'app/scripts/components/Artur/userLoginArtur/userLoginArtur.css',
+          'app/scripts/components/Artur/generalAddFormToDoArtur/generalAddFormToDoArtur.css',
+          'app/scripts/components/Artur/filtersToDoItemsArtur/filtersToDoItemsArtur.css',
           //place your Stylesheet files here
         ]
       },

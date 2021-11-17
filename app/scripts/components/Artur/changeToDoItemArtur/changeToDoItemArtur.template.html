@@ -1,6 +1,6 @@
 <span ng-switch="$ctrl.editMode">
     <input ng-switch-when="true" type="$ctrl.fieldType" ng-model="$ctrl.fieldValue">
 </span>
-<button ng-click="$ctrl.handleModeChange()" ng-if="$ctrl.editMode">Save</button>
-<button ng-click="$ctrl.handleModeChange()" ng-if="!$ctrl.editMode">Edit</button>
-<button ng-if="$ctrl.editMode" ng-click="$ctrl.reset()">Reset</button>
+<button type="button" class="btn btn-dark" ng-click="$ctrl.handleModeChange()" ng-if="$ctrl.editMode">Save</button>
+<button type="button" class="btn btn-dark" ng-click="$ctrl.handleModeChange()" ng-if="!$ctrl.editMode">Edit</button>
+<button type="button" class="btn btn-dark" ng-if="$ctrl.editMode" ng-click="$ctrl.reset()">Reset</button>

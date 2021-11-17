@@ -18,7 +18,7 @@
                     on-update="$ctrl.update(todo.id, 'description',  value)">
                 </change-to-do-item>
             </td>
-            <td><input type="checkbox" ng-model="todo.state"></td>
+            <td><input type="checkbox" ng-model="todo.state" class="form-check-input"></td>
             <td class="p-1">
                 <span ng-style="$ctrl.setStyle(todo.state)">
                     {{$ctrl.showText(todo.state)}}
