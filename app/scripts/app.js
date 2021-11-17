@@ -1,4 +1,4 @@
-angular.module('myApp', ['ngRoute', 'todoRost'])
+angular.module('myApp', ['ngRoute', 'todos', 'auth', 'todoRost'])
 
   .constant('TPL_PATH', '/templates')
 
@@ -8,10 +8,10 @@ angular.module('myApp', ['ngRoute', 'todoRost'])
         templateUrl: TPL_PATH + '/homePage.template.html'
       })
       .when('/login', {
-        templateUrl: TPL_PATH + '/login.html'
+        templateUrl: TPL_PATH + '/loginArtur.html'
       })
       .when('/home', {
-        templateUrl: TPL_PATH + '/home.html'
+        templateUrl: TPL_PATH + '/homeArtur.html'
       })
       .when('/rost', {
         templateUrl: TPL_PATH + '/rost-todo.html'
