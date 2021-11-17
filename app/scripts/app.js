@@ -8,10 +8,10 @@ angular.module('myApp', ['ngRoute', 'todos', 'auth'])
         templateUrl: TPL_PATH + '/homePage.template.html'
       })
       .when('/login', {
-        templateUrl: TPL_PATH + '/login.html'
+        templateUrl: TPL_PATH + '/loginArtur.html'
       })
       .when('/home', {
-        templateUrl: TPL_PATH + '/home.html'
+        templateUrl: TPL_PATH + '/homeArtur.html'
       })
   });
 

@@ -12,8 +12,7 @@ angular.module('auth')
             this.login = function () {
                 if (this.userName) {
                     authService.login(this.userName);
-                }
-                else {
+                } else {
                     alert('Введите имя')
                     return false
                 }
