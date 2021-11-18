@@ -1,4 +1,4 @@
-angular.module('vladTodo', [])
+angular.module("vladTodo")
    .component('editableField', {
       templateUrl: './scripts/components/vlad-todo-components/vlad-edit-component/vlad-edit-component.html',
       bindings: {

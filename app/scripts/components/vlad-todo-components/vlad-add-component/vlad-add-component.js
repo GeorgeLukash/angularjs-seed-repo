@@ -1,4 +1,4 @@
-angular.module("vladTodo", [])
+angular.module("vladTodo")
    .component("addTodo", {
       templateUrl: "./scripts/components/vlad-todo-components/vlad-add-component/vlad-add-component.html",
       bindings: {

@@ -1,5 +1,5 @@
-.input-text {
-   width: 400px;
+.input-text-vlad {
+   width: 380px;
    padding: 8px 10px;
    margin: 8px 0;
    box-sizing: border-box;
@@ -8,13 +8,13 @@
    outline: none;
 }
 
-.input-text:focus {
+.input-text-vlad:focus {
    border: 3px solid #555;
 }
 
-.submit {
+.submit-vlad {
    width: 50px;
-   height: 37px;
+   height: 40px;
    color: white;
    background-color: rgba(0,0,0, .75);
    font-family: Arial, Helvetica, sans-serif;

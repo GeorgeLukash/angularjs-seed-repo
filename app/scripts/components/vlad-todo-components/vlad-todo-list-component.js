@@ -1,4 +1,4 @@
-angular.module("vladTodo", [])
+angular.module("vladTodo")
    .component("todoListVladyslav", {
       templateUrl: "./scripts/components/vlad-todo-components/vlad-todo-list-component.html",
       controller: function() {

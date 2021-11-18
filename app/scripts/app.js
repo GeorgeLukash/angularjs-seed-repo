@@ -21,7 +21,7 @@ angular.module('myApp', ['ngRoute', 'todos', 'auth', 'todoRost',"app.dailyTasks"
       .when("/motivationPhrases", {
         templateUrl: TPL_PATH + "/motivationPhrasesPageOrel.template.html",
       })
-      .when('/vlad-home',{
+      .when('/vlad',{
         templateUrl : TPL_PATH + '/vlad-home.html'
       })
   });
