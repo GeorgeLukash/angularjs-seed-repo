@@ -1,4 +1,4 @@
-angular.module('myApp', ['ngRoute', 'todos', 'auth', 'todoRost'])
+angular.module('myApp', ['ngRoute', 'todos', 'auth', 'todoRost','vladTodo'])
 
   .constant('TPL_PATH', '/templates')
 
@@ -17,7 +17,6 @@ angular.module('myApp', ['ngRoute', 'todos', 'auth', 'todoRost'])
       templateUrl: TPL_PATH + '/rost-todo.html'
     })
     .when('/vlad-home',{
-      controller : 'HomeCtrl',
       templateUrl : TPL_PATH + '/vlad-home.html'
-  });
+    })
 });
