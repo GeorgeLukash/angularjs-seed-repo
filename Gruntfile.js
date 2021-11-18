@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-  require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
+  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.initConfig({
     shell: {
@@ -77,19 +77,21 @@ module.exports = function (grunt) {
       styles: {
         dest: "./app/assets/app.css",
         src: [
-          "app/styles/app.css",
+
+          'app/styles/app.css',
+          'app/scripts/components/todo-rost/add-new-task-component-rost/add-new-task-component-rost.css',
+          'app/scripts/components/todo-rost/main-list-component-rost.css',
+          'app/scripts/components/todo-rost/create-task-and-filter-component-rost/create-task-and-filter-component-rost.css',
+          'app/scripts/components/todo-rost/delete-marked-tasks-component-rost/delete-marked-tasks-component-rost.css',
+          'app/scripts/components/Artur/userLoginArtur/userLoginArtur.css',
+          'app/scripts/components/Artur/generalAddFormToDoArtur/generalAddFormToDoArtur.css',
+          'app/scripts/components/Artur/filtersToDoItemsArtur/filtersToDoItemsArtur.css',
           "app/scripts/components/Orel/mainComponentToDoListOrel/mainComponentToDoListOrel.component.css",
           "app/scripts/components/Orel/addItemToDoListOrel/addItemToDoListOrel.component.css",
           "app/scripts/components/Orel/listOfItemsToDoListOrel/listOfItemsToDoListOrel.component.css",
           "app/scripts/components/Orel/sortItemsToDoListOrel/sortItemsToDoListOrel.component.css",
-          "app/scripts/components/todo-rost/add-new-task-component-rost/add-new-task-component-rost.css",
-          "app/scripts/components/todo-rost/main-list-component-rost.css",
-          "app/scripts/components/todo-rost/create-task-and-filter-component-rost/create-task-and-filter-component-rost.css",
-          "app/scripts/components/todo-rost/delete-marked-tasks-component-rost/delete-marked-tasks-component-rost.css",
-          "app/scripts/components/Artur/userLoginArtur/userLoginArtur.css",
-          "app/scripts/components/Artur/generalAddFormToDoArtur/generalAddFormToDoArtur.css",
-          "app/scripts/components/Artur/filtersToDoItemsArtur/filtersToDoItemsArtur.css",
-        ],
+          //place your Stylesheet files here
+        ]
       },
       scripts: {
         options: {
@@ -97,52 +99,50 @@ module.exports = function (grunt) {
         },
         dest: "./app/assets/app.js",
         src: [
-          "bower_components/jquery/dist/jquery.js",
-          "bower_components/angular/angular.js",
-          "bower_components/angular-route/angular-route.js",
-          "bower_components/angular-animate/angular-animate.js",
-          "bower_components/popover.js/dist/popover.js",
-          "bower_components/bootstrap/dist/js/bootstrap.js",
-          "app/scripts/components/Orel/modules/dailyTasks.module.js",
-          "app/scripts/app.js",
-          "app/scripts/homePages.js",
+
+          'bower_components/jquery/dist/jquery.js',
+          'bower_components/angular/angular.js',
+          'bower_components/angular-route/angular-route.js',
+          'bower_components/angular-animate/angular-animate.js',
+          'bower_components/popover.js/dist/popover.js',
+          'bower_components/bootstrap/dist/js/bootstrap.js',
+          'app/scripts/app.js',
+          'app/scripts/components/todo-rost/main-list-component-rost.js',
+          'app/scripts/components/todo-rost/create-task-and-filter-component-rost/create-task-and-filter-component-rost.js',
+          'app/scripts/components/todo-rost/add-new-task-component-rost/add-new-task-component-rost.js',
+          'app/scripts/components/todo-rost/delete-marked-tasks-component-rost/delete-marked-tasks-component-rost.js',
+          'app/scripts/components/Artur/servicesArtur/authArtur.service.js',
+          'app/scripts/components/Artur/mainParentToDoArtur/mainParentToDoArtur.component.js',
+          'app/scripts/components/Artur/generalAddFormToDoArtur/generalAddFormToDoArtur.component.js',
+          'app/scripts/components/Artur/filtersToDoItemsArtur/filtersToDoItemsArtur.component.js',
+          'app/scripts/components/Artur/generalTableToDoArtur/generalTableToDoArtur.component.js',
+          'app/scripts/components/Artur/changeToDoItemArtur/changeToDoItemArtur.component.js',
+          'app/scripts/components/Artur/userLoginArtur/userLoginArtur.component.js',
+          "app/scripts/components/Orel/modules/dailyTasks.module.js",         
           "app/scripts/components/Orel/addItemToDoListOrel/addItemToDoListOrel.component.js",
           "app/scripts/components/Orel/filterItemsToDoListOrel/filterItemsToDoListOrel.component.js",
           "app/scripts/components/Orel/listOfItemsToDoListOrel/listOfItemsToDoListOrel.component.js",
           "app/scripts/components/Orel/mainComponentToDoListOrel/mainComponentToDoListOrel.component.js",
           "app/scripts/components/Orel/sortItemsToDoListOrel/sortItemsToDoListOrel.component.js",
-          "app/scripts/components/todo-rost/main-list-component-rost.js",
-          "app/scripts/components/todo-rost/create-task-and-filter-component-rost/create-task-and-filter-component-rost.js",
-          "app/scripts/components/todo-rost/add-new-task-component-rost/add-new-task-component-rost.js",
-          "app/scripts/components/todo-rost/delete-marked-tasks-component-rost/delete-marked-tasks-component-rost.js",
-          "app/scripts/components/Artur/servicesArtur/authArtur.service.js",
-          "app/scripts/components/Artur/mainParentToDoArtur/mainParentToDoArtur.component.js",
-          "app/scripts/components/Artur/generalAddFormToDoArtur/generalAddFormToDoArtur.component.js",
-          "app/scripts/components/Artur/filtersToDoItemsArtur/filtersToDoItemsArtur.component.js",
-          "app/scripts/components/Artur/generalTableToDoArtur/generalTableToDoArtur.component.js",
-          "app/scripts/components/Artur/changeToDoItemArtur/changeToDoItemArtur.component.js",
-          "app/scripts/components/Artur/userLoginArtur/userLoginArtur.component.js",
-        ],
+          //place your JavaScript files here
+        ]
       },
     },
 
     watch: {
       options: {
-        livereload: 7777,
+        livereload: 7777
       },
       assets: {
-        files: [
-          "app/styles/**/*.css",
-          "app/scripts/**/*.js",
-          "app/scripts/**/*.html",
-          "app/scripts/**/*.css",
-        ],
-        tasks: ["concat"],
+        files: ['app/styles/**/*.css', 'app/scripts/**/*.js', 'app/scripts/**/*.html', 'app/scripts/**/*.css'],
+
+        tasks: ['concat']
       },
       protractor: {
-        files: ["app/scripts/**/*.js", "test/e2e/**/*.js"],
-        tasks: ["protractor:auto"],
-      },
+        files: ['app/scripts/**/*.js', 'test/e2e/**/*.js'],
+        tasks: ['protractor:auto']
+      }
+    },
 
       open: {
         devserver: {
@@ -164,52 +164,34 @@ module.exports = function (grunt) {
           autoWatch: true,
           singleRun: false,
         },
-        unit_coverage: {
-          configFile: "./test/karma-unit.conf.js",
-          autoWatch: false,
-          singleRun: true,
-          reporters: ["progress", "coverage"],
-          preprocessors: {
-            "app/scripts/*.js": ["coverage"],
-          },
-          coverageReporter: {
-            type: "html",
-            dir: "coverage/",
-          },
-        },
+        coverageReporter: {
+
+          type: 'html',
+          dir: 'coverage/'
+        }
       },
-    },
   });
 
   //single run tests
 
-  grunt.registerTask("test", ["jshint", "test:unit", "test:e2e"]);
-  grunt.registerTask("test:unit", ["karma:unit"]);
-  grunt.registerTask("test:e2e", [
-    "connect:testserver",
-    "protractor:singlerun",
-  ]);
+
+  grunt.registerTask('test', ['jshint', 'test:unit', 'test:e2e']);
+  grunt.registerTask('test:unit', ['karma:unit']);
+  grunt.registerTask('test:e2e', ['connect:testserver', 'protractor:singlerun']);
 
   //autotest and watch tests
-  grunt.registerTask("autotest", ["karma:unit_auto"]);
-  grunt.registerTask("autotest:unit", ["karma:unit_auto"]);
-  grunt.registerTask("autotest:e2e", [
-    "connect:testserver",
-    "shell:selenium",
-    "watch:protractor",
-  ]);
+  grunt.registerTask('autotest', ['karma:unit_auto']);
+  grunt.registerTask('autotest:unit', ['karma:unit_auto']);
+  grunt.registerTask('autotest:e2e', ['connect:testserver', 'shell:selenium', 'watch:protractor']);
 
   //coverage testing
-  grunt.registerTask("test:coverage", ["karma:unit_coverage"]);
-  grunt.registerTask("coverage", [
-    "karma:unit_coverage",
-    "open:coverage",
-    "connect:coverage",
-  ]);
+  grunt.registerTask('test:coverage', ['karma:unit_coverage']);
+  grunt.registerTask('coverage', ['karma:unit_coverage', 'open:coverage', 'connect:coverage']);
 
   //installation-related
-  grunt.registerTask("install", ["update", "shell:protractor_install"]);
-  grunt.registerTask("update", ["shell:npm_install", "concat"]);
+  grunt.registerTask('install', ['update', 'shell:protractor_install']);
+  grunt.registerTask('update', ['shell:npm_install', 'concat']);
+
 
   //defaults
   grunt.registerTask("default", ["dev"]);
