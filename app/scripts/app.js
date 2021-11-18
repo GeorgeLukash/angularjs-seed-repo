@@ -1,18 +1,23 @@
-angular
-  .module("myApp", ["ngRoute", "app.dailyTasks"])
+
+angular.module('myApp', ['ngRoute', 'todos', 'auth', 'todoRost',"app.dailyTasks"])
+
 
   .constant("TPL_PATH", "/templates")
 
   .config(function ($routeProvider, TPL_PATH) {
     $routeProvider
-      .when("/", {
-        templateUrl: TPL_PATH + "/homePage.template.html",
+    
+      .when('/', {
+        templateUrl: TPL_PATH + '/homePage.template.html'
       })
-      .when("/login", {
-        templateUrl: TPL_PATH + "/login.html",
+      .when('/login', {
+        templateUrl: TPL_PATH + '/loginArtur.html'
       })
-      .when("/home", {
-        templateUrl: TPL_PATH + "/home.html",
+      .when('/home', {
+        templateUrl: TPL_PATH + '/homeArtur.html'
+      })
+      .when('/rost', {
+        templateUrl: TPL_PATH + '/rost-todo.html'
       })
       .when("/todoOrel", {
         templateUrl: TPL_PATH + "/mainPageOrel.template.html",
@@ -21,3 +26,4 @@ angular
         templateUrl: TPL_PATH + "/motivationPhrasesPageOrel.template.html",
       });
   });
+
