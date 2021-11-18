@@ -1,0 +1,12 @@
+<div class="container">
+    <a type="button" class="btn btn-outline-primary mt-1" href="#!">Home</a>
+    <div class="page-header mt-3">
+        <h1 class="text-center">Привет, {{$ctrl.user}}, количество дел на сегодня: {{$ctrl.todos.length}}</h1>
+    </div>
+    <general-add-form-to-do on-add="$ctrl.addNewToDo($event)"></general-add-form-to-do>
+    <filters-to-do-items query="$ctrl.filterQuery" sort="$ctrl.sortByState"></filters-to-do-items>
+    <general-table-to-do todos="$ctrl.todos" query="$ctrl.filterQuery" sort="$ctrl.sortByState"
+        on-delete-item="$ctrl.deleteItem($event)" on-update="$ctrl.updateTodo($event)">
+    </general-table-to-do>
+    <button ng-click="$ctrl.deleteList()" ng-if="$ctrl.todos.length > 0" class="btn btn-warning">Удалить всё</button>
+</div>

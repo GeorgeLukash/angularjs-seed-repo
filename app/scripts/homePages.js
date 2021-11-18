@@ -1,11 +1,9 @@
 angular.module('app.homePages', [])
-
-  .factory('welcomeMessage', function() {
-    return function() {
-      return 'Welcome Home...';
-    };
-  })
-
-  .controller('HomeCtrl', function($scope, welcomeMessage) {
-    $scope.welcome_message = welcomeMessage();
-  });
+    .component('homePage', {
+        templateUrl: './homePage.template.html',
+        controller: function () {
+            this.startToDo = function () {
+                $location.path('/login');
+            }
+        }
+    });

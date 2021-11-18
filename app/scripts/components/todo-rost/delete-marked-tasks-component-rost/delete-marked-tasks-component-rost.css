@@ -1,0 +1,38 @@
+.delete-buttons {
+    display: flex;
+    margin-left: 40%;
+}
+
+.del-marked {
+    background-color: transparent;
+    color:white;
+    font-size: 24px;
+    border: 2px solid white;
+    margin-top: 20px;
+    padding: 4px 28px;
+    transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+}
+
+.del-marked:hover {
+    background-color: rgb(141, 33, 33);
+    color: white;
+    border: 2px solid rgb(141, 33, 33);
+}
+
+.del-all {
+    background-color: rgb(99, 38, 38);
+    color: white;
+    font-size: 24px;
+    transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+    margin-top: 20px;
+    margin-left: 4px;
+    padding: 4px 28px;
+    border: none;
+    
+}
+
+.del-all:hover {
+    background-color: rgb(141, 33, 33);
+    color: white;
+    padding: 4px 28px;
+}

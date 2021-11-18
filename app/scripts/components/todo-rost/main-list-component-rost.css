@@ -1,0 +1,36 @@
+.main {
+    margin: 0;
+    width: 100%;
+    height: 980px;
+    background: linear-gradient(#7e886d,#41554f);
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    margin: 0;
+    color: white;
+    font-size: 64px;
+}
+
+.home-button {
+    display: flex;
+    justify-content: center;
+    width: 5%;
+    margin-right: 4px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 6px 18px;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+}
+
+.home-button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+}
