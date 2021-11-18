@@ -1,0 +1,50 @@
+<div class="all_list">
+  <div>
+    <div ng-repeat="item in $ctrl.todo" class="todoList">
+      <div class="line check-edit-{{ $ctrl.isEdit }}">
+        <input
+          type="checkbox"
+          ng-model="item.done"
+          class="custom_checkbox"
+          id="{{ item.id }}"
+        />
+        <label for="{{ item.id }}" class="edit-true"></label>
+      </div>
+      <span
+        ng-bind="item.priority"
+        class="done-{{ item.done }} edit-{{
+          $ctrl.isEdit
+        }} listItem listPriority align"
+      ></span>
+      <span
+        ng-bind="item.todoText"
+        class="done-{{ item.done }} edit-{{ $ctrl.isEdit }} listItem align"
+      ></span>
+
+      <input
+        type="text"
+        ng-model="item.todoText"
+        class="click-{{ $ctrl.isEdit }} changeItem"
+        minlength="2"
+        maxlength="50"
+      />
+      <button
+        ng-click="$ctrl.deleteOne(item)"
+        class="edit-{{ $ctrl.isEdit }} button button_delete align"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+  <div class="edit">
+    <button
+      ng-click="$ctrl.edit(item.todoText)"
+      class="edit-{{ $ctrl.isEdit }} button"
+    >
+      Edit list
+    </button>
+    <button ng-click="$ctrl.save()" class="click-{{ $ctrl.isEdit }} button">
+      Save
+    </button>
+  </div>
+</div>
