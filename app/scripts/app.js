@@ -1,10 +1,11 @@
 angular
-  .module("myApp", ["ngRoute", "app.dailyTasks"])
+  .module("myApp", ["ngRoute", "todos", "auth", "todoRost", "app.dailyTasks"])
 
   .constant("TPL_PATH", "/templates")
 
   .config(function ($routeProvider, TPL_PATH) {
     $routeProvider
+
       .when("/", {
         templateUrl: TPL_PATH + "/homePage.template.html",
       })
@@ -19,5 +20,8 @@ angular
       })
       .when("/motivationPhrases", {
         templateUrl: TPL_PATH + "/motivationPhrasesPageOrel.template.html",
+      })
+      .when("/rost", {
+        templateUrl: TPL_PATH + "/rost-todo.html",
       });
   });

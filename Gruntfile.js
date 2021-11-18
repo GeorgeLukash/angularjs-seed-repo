@@ -82,6 +82,13 @@ module.exports = function (grunt) {
           "app/scripts/components/Orel/addItemToDoListOrel/addItemToDoListOrel.component.css",
           "app/scripts/components/Orel/listOfItemsToDoListOrel/listOfItemsToDoListOrel.component.css",
           "app/scripts/components/Orel/sortItemsToDoListOrel/sortItemsToDoListOrel.component.css",
+          "app/scripts/components/todo-rost/add-new-task-component-rost/add-new-task-component-rost.css",
+          "app/scripts/components/todo-rost/main-list-component-rost.css",
+          "app/scripts/components/todo-rost/create-task-and-filter-component-rost/create-task-and-filter-component-rost.css",
+          "app/scripts/components/todo-rost/delete-marked-tasks-component-rost/delete-marked-tasks-component-rost.css",
+          "app/scripts/components/Artur/userLoginArtur/userLoginArtur.css",
+          "app/scripts/components/Artur/generalAddFormToDoArtur/generalAddFormToDoArtur.css",
+          "app/scripts/components/Artur/filtersToDoItemsArtur/filtersToDoItemsArtur.css",
         ],
       },
       scripts: {
@@ -90,17 +97,31 @@ module.exports = function (grunt) {
         },
         dest: "./app/assets/app.js",
         src: [
+          "bower_components/jquery/dist/jquery.js",
           "bower_components/angular/angular.js",
           "bower_components/angular-route/angular-route.js",
           "bower_components/angular-animate/angular-animate.js",
+          "bower_components/popover.js/dist/popover.js",
+          "bower_components/bootstrap/dist/js/bootstrap.js",
           "app/scripts/components/Orel/modules/dailyTasks.module.js",
-          "app/scripts/homePages.js",
           "app/scripts/app.js",
+          "app/scripts/homePages.js",
           "app/scripts/components/Orel/addItemToDoListOrel/addItemToDoListOrel.component.js",
           "app/scripts/components/Orel/filterItemsToDoListOrel/filterItemsToDoListOrel.component.js",
           "app/scripts/components/Orel/listOfItemsToDoListOrel/listOfItemsToDoListOrel.component.js",
           "app/scripts/components/Orel/mainComponentToDoListOrel/mainComponentToDoListOrel.component.js",
           "app/scripts/components/Orel/sortItemsToDoListOrel/sortItemsToDoListOrel.component.js",
+          "app/scripts/components/todo-rost/main-list-component-rost.js",
+          "app/scripts/components/todo-rost/create-task-and-filter-component-rost/create-task-and-filter-component-rost.js",
+          "app/scripts/components/todo-rost/add-new-task-component-rost/add-new-task-component-rost.js",
+          "app/scripts/components/todo-rost/delete-marked-tasks-component-rost/delete-marked-tasks-component-rost.js",
+          "app/scripts/components/Artur/servicesArtur/authArtur.service.js",
+          "app/scripts/components/Artur/mainParentToDoArtur/mainParentToDoArtur.component.js",
+          "app/scripts/components/Artur/generalAddFormToDoArtur/generalAddFormToDoArtur.component.js",
+          "app/scripts/components/Artur/filtersToDoItemsArtur/filtersToDoItemsArtur.component.js",
+          "app/scripts/components/Artur/generalTableToDoArtur/generalTableToDoArtur.component.js",
+          "app/scripts/components/Artur/changeToDoItemArtur/changeToDoItemArtur.component.js",
+          "app/scripts/components/Artur/userLoginArtur/userLoginArtur.component.js",
         ],
       },
     },
@@ -122,45 +143,46 @@ module.exports = function (grunt) {
         files: ["app/scripts/**/*.js", "test/e2e/**/*.js"],
         tasks: ["protractor:auto"],
       },
-    },
 
-    open: {
-      devserver: {
-        path: "http://localhost:8888",
-      },
-      coverage: {
-        path: "http://localhost:5555",
-      },
-    },
-
-    karma: {
-      unit: {
-        configFile: "./test/karma-unit.conf.js",
-        autoWatch: false,
-        singleRun: true,
-      },
-      unit_auto: {
-        configFile: "./test/karma-unit.conf.js",
-        autoWatch: true,
-        singleRun: false,
-      },
-      unit_coverage: {
-        configFile: "./test/karma-unit.conf.js",
-        autoWatch: false,
-        singleRun: true,
-        reporters: ["progress", "coverage"],
-        preprocessors: {
-          "app/scripts/*.js": ["coverage"],
+      open: {
+        devserver: {
+          path: "http://localhost:8888",
         },
-        coverageReporter: {
-          type: "html",
-          dir: "coverage/",
+        coverage: {
+          path: "http://localhost:5555",
+        },
+      },
+
+      karma: {
+        unit: {
+          configFile: "./test/karma-unit.conf.js",
+          autoWatch: false,
+          singleRun: true,
+        },
+        unit_auto: {
+          configFile: "./test/karma-unit.conf.js",
+          autoWatch: true,
+          singleRun: false,
+        },
+        unit_coverage: {
+          configFile: "./test/karma-unit.conf.js",
+          autoWatch: false,
+          singleRun: true,
+          reporters: ["progress", "coverage"],
+          preprocessors: {
+            "app/scripts/*.js": ["coverage"],
+          },
+          coverageReporter: {
+            type: "html",
+            dir: "coverage/",
+          },
         },
       },
     },
   });
 
   //single run tests
+
   grunt.registerTask("test", ["jshint", "test:unit", "test:e2e"]);
   grunt.registerTask("test:unit", ["karma:unit"]);
   grunt.registerTask("test:e2e", [
