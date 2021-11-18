@@ -1,0 +1,24 @@
+<div class="content">
+  <div class="main_content">
+    <div class="total_todos">
+      <p>Total tasks for today: {{ $ctrl.todoCopy.length }}</p>
+    </div>
+    <add-item-to-do-list-component
+      on-update="$ctrl.addItem($event)"
+    ></add-item-to-do-list-component>
+    <list-of-items-to-do-list-component
+      todo="$ctrl.todoList"
+      on-delete="$ctrl.deleteItem($event)"
+      class="list_component"
+    ></list-of-items-to-do-list-component>
+    <div class="sort_delete">
+      <sort-items-to-do-list-component
+        todo="$ctrl.todoList"
+      ></sort-items-to-do-list-component>
+      <button ng-click="$ctrl.clearAll()" class="button">Clear list</button>
+    </div>
+    <filter-items-to-do-list-component
+      filter-todo="$ctrl.filterList($event)"
+    ></filter-items-to-do-list-component>
+  </div>
+</div>
