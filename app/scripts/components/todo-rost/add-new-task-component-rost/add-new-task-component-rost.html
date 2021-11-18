@@ -1,0 +1,17 @@
+<form name="todoAddForm" ng-submit="$ctrl.todoAdd()" class="form">
+    <input 
+        type="text"
+        name="new task"
+        ng-model="$ctrl.todoInputTask"
+        placeholder="Add new task"
+        minlength="2"
+        required
+        class="input-add"
+    />
+    <input 
+        type="submit" 
+        name="Add" 
+        value="Add" 
+        class="add-button"
+    />  
+</form>
