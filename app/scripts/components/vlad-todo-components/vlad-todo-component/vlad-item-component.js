@@ -1,5 +1,5 @@
 angular.module("vladTodo")
-   .component("itemTodo", {
+   .component("createItemTodoComponent", {
       templateUrl: "./scripts/components/vlad-todo-components/vlad-todo-component/vlad-item-component.html",
       bindings: {
          todo: "<",
