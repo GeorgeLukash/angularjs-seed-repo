@@ -1,5 +1,6 @@
-angular.module("app.dailyTasks").component("addComponent", {
-  templateUrl: "./scripts/components/dailyTasks/add/add.component.html",
+angular.module("app.dailyTasks").component("addItemToDoListComponent", {
+  templateUrl:
+    "./scripts/components/Orel/addItemToDoListOrel/addItemToDoListOrel.component.html",
   bindings: {
     onUpdate: "&",
   },

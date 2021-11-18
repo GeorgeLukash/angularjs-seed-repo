@@ -1,5 +1,6 @@
-angular.module("app.dailyTasks").component("filterComponent", {
-  templateUrl: "./scripts/components/dailyTasks/filter/filter.component.html",
+angular.module("app.dailyTasks").component("filterItemsToDoListComponent", {
+  templateUrl:
+    "./scripts/components/Orel/filterItemsToDoListOrel/filterItemsToDoListOrel.component.html",
   bindings: {
     filterTodo: "&",
   },

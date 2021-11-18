@@ -1,5 +1,6 @@
-angular.module("app.dailyTasks").component("listComponent", {
-  templateUrl: "./scripts/components/dailyTasks/list/list.component.html",
+angular.module("app.dailyTasks").component("listOfItemsToDoListComponent", {
+  templateUrl:
+    "./scripts/components/Orel/listOfItemsToDoListOrel/listOfItemsToDoListOrel.component.html",
   bindings: {
     todo: "<",
     onDelete: "&",

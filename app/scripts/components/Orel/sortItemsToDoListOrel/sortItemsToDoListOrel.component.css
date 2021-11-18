@@ -1,0 +1,9 @@
+.sort_delete {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+  margin-bottom: 25px;
+}
+.button_sort {
+  margin-right: 15px;
+}

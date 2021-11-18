@@ -1,20 +1,24 @@
 <div class="all_list">
   <div>
     <div ng-repeat="item in $ctrl.todo" class="todoList">
-      <input
-        type="checkbox"
-        ng-model="item.done"
-        class="custom_checkbox"
-        id="{{ item.id }}"
-      />
-      <label for="{{ item.id }}"></label>
+      <div class="line check-edit-{{ $ctrl.isEdit }}">
+        <input
+          type="checkbox"
+          ng-model="item.done"
+          class="custom_checkbox"
+          id="{{ item.id }}"
+        />
+        <label for="{{ item.id }}" class="edit-true"></label>
+      </div>
       <span
         ng-bind="item.priority"
-        class="done-{{ item.done }} edit-{{ $ctrl.isEdit }} listItem listPriority"
+        class="done-{{ item.done }} edit-{{
+          $ctrl.isEdit
+        }} listItem listPriority align"
       ></span>
       <span
         ng-bind="item.todoText"
-        class="done-{{ item.done }} edit-{{ $ctrl.isEdit }} listItem"
+        class="done-{{ item.done }} edit-{{ $ctrl.isEdit }} listItem align"
       ></span>
 
       <input
@@ -26,7 +30,7 @@
       />
       <button
         ng-click="$ctrl.deleteOne(item)"
-        class="edit-{{ $ctrl.isEdit }} button button_delete"
+        class="edit-{{ $ctrl.isEdit }} button button_delete align"
       >
         Delete
       </button>

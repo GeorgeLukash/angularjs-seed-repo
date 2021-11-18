@@ -1,5 +1,6 @@
-angular.module("app.dailyTasks").component("sortComponent", {
-  templateUrl: "./scripts/components/dailyTasks/sort/sort.component.html",
+angular.module("app.dailyTasks").component("sortItemsToDoListComponent", {
+  templateUrl:
+    "./scripts/components/Orel/sortItemsToDoListOrel/sortItemsToDoListOrel.component.html",
   bindings: {
     todo: "<",
   },

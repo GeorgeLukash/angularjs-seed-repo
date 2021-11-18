@@ -3,14 +3,21 @@ angular
 
   .constant("TPL_PATH", "/templates")
 
-  .config(($routeProvider, TPL_PATH) => {
-    $routeProvider.when("/dailyTasks", {
-      templateUrl: TPL_PATH + "/dailyTasks.html",
-    });
-    $routeProvider.when("/motivationPhrases", {
-      templateUrl: TPL_PATH + "/motivationPhrases.html",
-    });
-    $routeProvider.otherwise({
-      redirectTo: "/dailyTasks",
-    });
+  .config(function ($routeProvider, TPL_PATH) {
+    $routeProvider
+      .when("/", {
+        templateUrl: TPL_PATH + "/homePage.template.html",
+      })
+      .when("/login", {
+        templateUrl: TPL_PATH + "/login.html",
+      })
+      .when("/home", {
+        templateUrl: TPL_PATH + "/home.html",
+      })
+      .when("/todoOrel", {
+        templateUrl: TPL_PATH + "/mainPageOrel.template.html",
+      })
+      .when("/motivationPhrases", {
+        templateUrl: TPL_PATH + "/motivationPhrasesPageOrel.template.html",
+      });
   });
