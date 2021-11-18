@@ -91,6 +91,10 @@ module.exports = function (grunt) {
           "app/scripts/components/Orel/listOfItemsToDoListOrel/listOfItemsToDoListOrel.component.css",
           "app/scripts/components/Orel/sortItemsToDoListOrel/sortItemsToDoListOrel.component.css",
           //place your Stylesheet files here
+          'app/scripts/components/vlad-todo-components/vlad-todo-list-component.css',
+          'app/scripts/components/vlad-todo-components/vlad-add-component/vlad-add-component.css',
+          'app/scripts/components/vlad-todo-components/vlad-todo-component/vlad-item-component.css',
+          'app/scripts/components/vlad-todo-components/vlad-edit-component/vlad-edit-component.css',
         ]
       },
       scripts: {
@@ -124,7 +128,11 @@ module.exports = function (grunt) {
           "app/scripts/components/Orel/listOfItemsToDoListOrel/listOfItemsToDoListOrel.component.js",
           "app/scripts/components/Orel/mainComponentToDoListOrel/mainComponentToDoListOrel.component.js",
           "app/scripts/components/Orel/sortItemsToDoListOrel/sortItemsToDoListOrel.component.js",
-          //place your JavaScript files here
+          'app/scripts/components/vlad-todo-components/module/module.js',
+          'app/scripts/components/vlad-todo-components/vlad-todo-list-component.js',
+          'app/scripts/components/vlad-todo-components/vlad-add-component/vlad-add-component.js',
+          'app/scripts/components/vlad-todo-components/vlad-todo-component/vlad-item-component.js',
+          'app/scripts/components/vlad-todo-components/vlad-edit-component/vlad-edit-component.js',
         ]
       },
     },

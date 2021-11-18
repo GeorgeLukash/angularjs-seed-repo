@@ -1,0 +1,22 @@
+.input-text-vlad {
+   width: 380px;
+   padding: 8px 10px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border: 3px solid #ccc;
+   transition: 0.5s;
+   outline: none;
+}
+
+.input-text-vlad:focus {
+   border: 3px solid #555;
+}
+
+.submit-vlad {
+   width: 50px;
+   height: 40px;
+   color: white;
+   background-color: rgba(0,0,0, .75);
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}

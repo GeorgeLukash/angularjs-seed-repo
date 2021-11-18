@@ -1,0 +1,43 @@
+<div class="todo-container-vlad">
+   <a href="#!" class="buttons-vlad-home">Home</a>
+   <div class="todo-wrapper-vlad">
+      <div class="todo-header-vlad">
+         <h1 class="heder-style-vlad">
+            Todo List by Vladyslav
+         </h1>
+      </div>
+      <div>
+         <h2 class="heder-style-vlad">
+            All todo {{ $ctrl.todo.length }}
+         </h2>
+      </div>
+         <add-todo on-update="$ctrl.addTodo($event)"></add-todo>
+         <div ng-if="$ctrl.allTodos.length > 0">
+            <button 
+               ng-click="$ctrl.filterActive()" 
+               class="buttons-vlad">
+               Active todo
+            </button>
+            <button 
+               ng-click="$ctrl.filterCompleted()" 
+               class="buttons-vlad">
+               Completed todo
+            </button>
+            <button 
+               ng-click="$ctrl.filterAll()" 
+               class="buttons-vlad">
+               All todo
+            </button>
+            <button
+               ng-click="$ctrl.clearTodo()" 
+               class="buttons-vlad">
+               Clear all
+            </button>
+         </div>
+         <create-item-todo-component
+            todo="$ctrl.todo" 
+            on-update="$ctrl.updateTodo($event)"
+            on-delete="$ctrl.deleteOne($event)">
+         </create-item-todo-component>
+   </div>
+</div>

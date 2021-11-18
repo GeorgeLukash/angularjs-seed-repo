@@ -1,10 +1,10 @@
-.body {
+.body-orel-todo {
   background-color: rgba(216, 191, 216, 0.5);
   color: #4b0082;
   flex-grow: 1;
   height: 100%;
 }
-.wrapper {
+.wrapper-orel-todo {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
